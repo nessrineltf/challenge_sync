@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <title>Asynchronous JavaScript</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- <div class="card">
+        <div class="card_img">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <h3 class="country">tunisia</h3>
+        <h2 class="region">Africa</h2>
+        <h2 class="population">1 M</h2>
+        <h2 class="language">arabic</h2>
+        <h2 class="currencie">DTN</h2>
+      </div>
+      <div class="card">
+        <div class="card_img">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <h3 class="country">tunisia</h3>
+        <h2 class="region">Africa</h2>
+        <h2 class="population">1 M</h2>
+        <h2 class="language">arabic</h2>
+        <h2 class="currencie">DTN</h2>
+      </div> -->
+      <!-- <button class="btn-country">Where am I?</button> -->
+    </main>
+  </body>
+</html>
